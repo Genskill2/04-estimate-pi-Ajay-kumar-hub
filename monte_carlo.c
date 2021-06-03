@@ -48,12 +48,10 @@ float mc_pi(int n)
       z=frandom();
       t=(y*y)+(z*z);
       if(t<=1)
-     {  
-        within_circle++;
+     { within_circle++;
      }
      else 
-     {  
-       oustside_circle++;
+     { oustside_circle++;
      }
   }
   total_points= within_circle+ outside_circle;
