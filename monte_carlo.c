@@ -48,10 +48,12 @@ float mc_oi(int n)
       z=fradom();
       t=(y*y)+(z*z);
       if(t<=1)
-     {  within_circle++;
+     {  
+        within_circle++;
      }
      else 
-     {  oustside_circle++;
+     {  
+       oustside_circle++;
      }
   }
   total_points= within_circle+ outside_circle;
