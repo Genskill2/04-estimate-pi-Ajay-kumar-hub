@@ -5,7 +5,7 @@
 
 float wallis_pi(int n)
 	
- int main(void) {
+  int main(void) {
   float pi;
   for (int i=0; i<5; i++) {
     pi = wallis_pi(i);
@@ -23,3 +23,10 @@ float wallis_pi(int n)
     }
   }
 }
+ float wallis_pi(int n){
+	 float pi_2=(float)1,m;
+	 for(int i=1;i<=n;i++){
+		 m=4*i*i;
+		 pi_2*=(float)m/((float)m-1);
+	 }
+	 retrun ((float)pi_2*(float)2);
