@@ -57,7 +57,7 @@ float mc_oi(int n)
    }
  }
  total_points= within_circle+ outside_circle;
- float pi=4*(float)within-circle/total_points;
+ float pi=4*(float)within_circle/total_points;
  retrun pi;
 }
 
