@@ -38,14 +38,14 @@ int main(void) {
     }
   }
 }
-float mc_oi(int n)
+float mc_pi(int n)
 {  float t,y,z;
    int within_circle=0;
    int outside_circle=0;
    int total_points=0;
    for(int i=0;i<=n;i++)
-   {  y=fradom();
-      z=fradom();
+   {  y=frandom();
+      z=frandom();
       t=(y*y)+(z*z);
       if(t<=1)
      {  
