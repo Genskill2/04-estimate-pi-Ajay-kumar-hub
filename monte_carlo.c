@@ -10,6 +10,22 @@ float frandom() {
   float ret = (float)q/(float)RAND_MAX;
   return ret;
 }
+float mc_pi(int n)
+{
+  int pc=0,ps=n;
+  for (int i=0; i<n; i++){
+    float x,y,z;
+    x=frandom();
+    y=frandom();
+    z=x*x+y*y;
+    if(z<=1){
+      pc++;
+    }
+  }
+  float pi=4.0*pc/ps;
+  retrun pi;
+}
+
 
 int main(void) {
   float pi0;
@@ -38,39 +54,8 @@ int main(void) {
     }
   }
 }
-float mc_pi(int n){  
-  float y,z;
-   int i=0,circle=0;
-  float x;
-  int square=0;
-  
-  float pi;
-  
-  while (i<n-1){
-    
-    y=frandom();
-    z=frandom() ;
-    x=y*y+z*z;
-     
+
       
-    if(z<=1){
-      circle+=1;
-      square+=1;
-    }
-    else{
-      square+=1;
       
-      i++;
-      
-    }
-    
-  }
-  
-  pi=(float)4*circle/square;
-  return pi;
-  
-}    
-     
-     
      
      
