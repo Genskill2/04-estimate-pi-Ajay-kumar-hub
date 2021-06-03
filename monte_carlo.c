@@ -38,24 +38,39 @@ int main(void) {
     }
   }
 }
-float mc_pi(int n)
-{  float t,y,z;
-   int within_circle=0;
-   int outside_circle=0;
-   int total_points=0;
-   for(int i=0;i<=n;i++)
-   {  y=frandom();
-      z=frandom();
-      t=(y*y)+(z*z);
-      if(t<=1)
-     { within_circle++;
-     }
-     else 
-     { oustside_circle++;
-     }
+float mc_pi(int n){  
+  float y,z;
+   int i=0,circle=0;
+  float x;
+  int square=0;
+  
+  float pi;
+  
+  while (i<n-1){
+    
+    y=frandom();
+    z=frandom() ;
+    x=y*y+z*z
+     
+      
+    if(z<=1){
+      crocle+=1;
+      square+=1;
+    }
+    else{
+      square+=1;
+      
+      i++;
+      
+    }
+    
   }
-  total_points= within_circle+ outside_circle;
-  float pi=4*(float)within_circle/total_points;
+  
+  pi=(float)4*cricle/square;
   return pi;
-}
-
+  
+}    
+     
+     
+     
+     
