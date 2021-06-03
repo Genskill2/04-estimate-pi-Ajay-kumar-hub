@@ -38,6 +38,26 @@ int main(void) {
     }
   }
 }
-
-
+float mc_oi(int n)
+{ float t,y,z;
+ int within_circle=0;
+ int outside_circle=0;
+ int total_points=0;
+ for(int i=0;i<=n;i++)
+ { y=fradom();
+   z=fradom();
+   t=(y*y)+(z*z);
+   if(t<=1)
+   {
+     within_circle++;
+   }
+   else 
+   {
+     oustside_circle++;
+   }
+ }
+ total_points= within_circle+ outside_circle;
+ float pi=4*(float)within-circle/total_points;
+ retrun pi;
+}
 
