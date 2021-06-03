@@ -23,7 +23,7 @@ float mc_pi(int n)
     }
   }
   float pi=4.0*pc/ps;
-  retrun pi;
+  return pi;
 }
 
 
