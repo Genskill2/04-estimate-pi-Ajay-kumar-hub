@@ -50,11 +50,11 @@ float mc_pi(int n){
     
     y=frandom();
     z=frandom() ;
-    x=y*y+z*z
+    x=y*y+z*z;
      
       
     if(z<=1){
-      crocle+=1;
+      circle+=1;
       square+=1;
     }
     else{
@@ -66,7 +66,7 @@ float mc_pi(int n){
     
   }
   
-  pi=(float)4*cricle/square;
+  pi=(float)4*circle/square;
   return pi;
   
 }    
